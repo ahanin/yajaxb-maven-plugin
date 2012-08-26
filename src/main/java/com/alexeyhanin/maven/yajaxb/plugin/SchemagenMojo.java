@@ -122,6 +122,12 @@ public class SchemagenMojo extends AbstractMojo {
             throw new MojoExecutionException("Failed to retrieve classpath", ex);
         }
 
+        if (episode != null) {
+            if (!episode.getParentFile().exists()) {
+                episode.getParentFile().mkdirs();
+            }
+        }
+
         final List<String> args = new ArrayList<String>(sources.size() + 10);
         args.add("-d");
         args.add(outputDirectory.getAbsolutePath());
