@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<ns1:bindings version="2.1" xmlns:ns1="http://java.sun.com/xml/ns/jaxb">
+  <ns1:bindings scd="x-schema::tns" xmlns:tns="http://ws.alexeyhanin.com/shop/domain">
+    <ns1:schemaBindings map="false"/>
+    <ns1:bindings scd="~tns:customer">
+      <ns1:class ref="shop.domain.Customer"/>
+    </ns1:bindings>
+    <ns1:bindings scd="~tns:sex">
+      <ns1:class ref="shop.domain.Sex"/>
+    </ns1:bindings>
+  </ns1:bindings>
+</ns1:bindings>
+
